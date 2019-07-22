@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 強迫文字換行 */
+p {
+  word-break: break-all;
+}
+
+
+.addBorder {
+  border: 2px solid #666
+}
+
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+img {
+  position: relative;
+}

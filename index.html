@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1 class="mx-4">Custumize Your Namecard</h1>
+  <form>
+    <div class="form-group mx-4">
+      <input type="text" class="form-control" id="nameInput" placeholder="Your Name" required>
+      <div class="nameFeedback small text-danger"></div>
+    </div>
+    <div class="form-group mx-4">
+      <input type="text" class="form-control" id="photoInput" placeholder="Link to your photo">
+      <div class="small text-primary">請貼上圖片連結(若不輸入則會使用假圖片)</div>
+    </div>
+    <div class="form-group mx-4">
+      <textarea class="form-control" id="introInput" rows="5" placeholder="Introduce yourself in 200 words."
+        required></textarea>
+    </div>
+    <div class="m-4 introFeedback small text-danger"></div>
+    </div>
+    <div>
+      <label class="ml-4 mr-2">Choose the theme:</label>
+      <div id="themeChoose" class="mx-4">
+        <input type="radio" class="mr-1" name="theme" id="lightTheme" value="lightTheme" checked>Light Theme
+        <input type="radio" class="ml-2 mr-1" name="theme" id="darkTheme" value="darkTheme">Dark Theme
+      </div>
+    </div>
+    <div class="m-4">
+      <button type="button" class="btn btn-primary" id="submitButton">Submit</button>
+    </div>
+  </form>
+
+
+  <div class="result mx-4">
+    <!-- input submitted result here -->
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
